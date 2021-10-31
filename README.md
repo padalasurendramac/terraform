@@ -32,3 +32,7 @@ terraform apply
 
 after enter above command pop to enter vaule just type "yes"
 
+
+delete the create instance use below command
+
+terraform destroy
