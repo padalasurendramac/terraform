@@ -1,38 +1,38 @@
-#Setup terrform on windows 
+# Setup terrform on windows 
 
 
-download terrformform zip or install exe file
+### download terrformform zip or install exe file
 
 
-aws confgure  # use this command to export user keys before enter command create an user with full access permssion on aws
+    aws confgure  # use this command to export user keys before enter command create an user with full access permssion on aws
 
 
-then
+###  then
 
-run 
+### run 
 
-terrform -version
-
-
-
-
-step:-1
-terrform init
+     terrform -version
 
 
 
-step:-2
-terrform plan 
+
+### step:-1
+    terrform init
 
 
 
-step:3
-
-terraform apply
-
-after enter above command pop to enter vaule just type "yes"
+### step:-2
+    terrform plan 
 
 
-delete the create instance use below command
 
-terraform destroy
+### step:3
+
+    terraform apply
+
+### after enter above command pop to enter vaule just type "yes"
+
+
+### delete the create instance use below command
+
+    terraform destroy
