@@ -1,4 +1,4 @@
-Setup terrform on windows 
+#Setup terrform on windows 
 
 
 download terrformform zip or install exe file
