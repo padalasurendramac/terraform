@@ -19,6 +19,36 @@
     region = "us-west-2"   # us-west-2 oregan region and below image from same region available ami id
     }
 
+###  varibles types are 3 types on terraform
+
+	a) default
+	b) list
+	c) map
+	
+### syntax single variable
+		variable "server_port" {
+		  description = "The port the server will use for HTTP requests"
+		  default = 8080
+		}
+	
+### syntax ( multi variables ) for list
+
+		variable "list_example" {
+		  description = "An example of a list in Terraform"
+		  type = "list"
+		  default = [1, 2, 3]
+		}
+		And here’s a map:
+### syntax for variables with vaules map 
+		variable "map_example" {
+		  description = "An example of a map in Terraform"
+		  type = "map"
+		  default = {
+		    key1 = "value1"
+		    key2 = "value2"
+		    key3 = "value3"
+		 }
+		}
 
 
 ###  then
