@@ -50,6 +50,17 @@
 		 }
 		}
 
+### output to get ips public_ip and private_ip ( code should be last )
+  
+	output "public_ip" {
+  	  value = "${aws_instance.example.public_ip}"
+        }
+-----------------output----
+     	Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+
+	Outputs:
+
+	public_ip = "5*.21*.24*.**"
 
 ###  then
 
