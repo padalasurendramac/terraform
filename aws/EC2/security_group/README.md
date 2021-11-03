@@ -5,16 +5,16 @@
         description = "web_server"
         default = 8080
       }
- 
-resource "aws_security_group" "instance" {
-      name = "terraform-example"
-      ingress {
-        from_port = "${var.server_port}"   # passing variable server_port from varible resources
-        to_port = "${var.server_port}"     # passing variable server_port from varible resources
-        protocol = "tcp"
-        cidr_blocks = ["0.0.0.0/0"]
-      }
-    }
+### security group creating 
+            resource "aws_security_group" "instance" {
+                  name = "terraform-example"
+                  ingress {
+                    from_port = "${var.server_port}"   # passing variable server_port from varible resources
+                    to_port = "${var.server_port}"     # passing variable server_port from varible resources
+                    protocol = "tcp"
+                    cidr_blocks = ["0.0.0.0/0"]
+                  }
+                }
 
 ### vpc resource passing under instance type resouce
 
